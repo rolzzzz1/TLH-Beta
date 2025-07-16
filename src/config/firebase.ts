@@ -1,20 +1,13 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
-// TODO: Replace with your Firebase configuration
-// To get your configuration:
-// 1. Go to Firebase Console (https://console.firebase.google.com)
-// 2. Select your project
-// 3. Click Project Settings (gear icon)
-// 4. Under "Your apps", find or create a web app
-// 5. Copy the firebaseConfig object
 export const firebaseConfig = {
-  apiKey: "AIzaSyCwsXRqqFFQmuWBjegAfVtv1pAUYD1zzSE",
-  authDomain: "tlh---beta.firebaseapp.com",
-  projectId: "tlh---beta",
-  storageBucket: "tlh---beta.firebasestorage.app",
-  messagingSenderId: "185116067007",
-  appId: "1:185116067007:web:7a2003b553c4d30ddd720a"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
