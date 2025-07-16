@@ -29,11 +29,11 @@ const FeaturedPost: React.FC<FeaturedPostProps> = ({ id, title, excerpt, imageUr
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 cursor-pointer hover:shadow-xl transition-all duration-300 group"
+      className="bg-white rounded-xl shadow-lg overflow-hidden mb-6 cursor-pointer hover:shadow-xl transition-all duration-300 group"
       onClick={() => navigate(`/post/${id}`)}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-        <div className="relative h-48 md:h-64 overflow-hidden">
+        <div className="relative h-40 md:h-52 overflow-hidden">
           <img
             src={imageUrl}
             alt={getTranslation(title)}
@@ -46,9 +46,9 @@ const FeaturedPost: React.FC<FeaturedPostProps> = ({ id, title, excerpt, imageUr
             </span>
           </div>
         </div>
-        <div className="p-6 md:p-8 flex flex-col justify-between">
+        <div className="p-4 md:p-6 flex flex-col justify-between">
           <div>
-            <div className="flex flex-wrap items-center gap-2 mb-3">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
               {categories?.map(categoryId => {
                 const category = allCategories.find(c => c.id === categoryId);
                 return category ? (
@@ -65,11 +65,11 @@ const FeaturedPost: React.FC<FeaturedPostProps> = ({ id, title, excerpt, imageUr
               </span>
             </div>
             
-            <h2 className="text-2xl md:text-3xl font-bold text-[#2D2D2B] mb-4 line-clamp-2 group-hover:text-[#F7A69D] transition-colors">
+            <h2 className="text-xl md:text-2xl font-bold text-[#2D2D2B] mb-3 line-clamp-2 group-hover:text-[#F7A69D] transition-colors">
               {getTranslation(title)}
             </h2>
             
-            <div className="text-gray-600 mb-6 line-clamp-3 leading-relaxed markdown-preview">
+            <div className="text-gray-600 mb-4 line-clamp-2 leading-relaxed markdown-preview">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
@@ -81,7 +81,7 @@ const FeaturedPost: React.FC<FeaturedPostProps> = ({ id, title, excerpt, imageUr
 
           <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center">
-              <div className="w-8 h-8 rounded-full bg-[#F8F5F2] flex items-center justify-center mr-2">
+              <div className="w-7 h-7 rounded-full bg-[#F8F5F2] flex items-center justify-center mr-2">
                 <svg className="w-4 h-4 text-[#F7A69D]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
                 </svg>

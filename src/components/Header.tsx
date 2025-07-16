@@ -8,13 +8,13 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm">
-      <div className="max-w-6xl mx-auto px-8 py-4">
+      <div className="max-w-6xl mx-auto px-8 py-2">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-4">
             <img 
               src="/logo.png" 
               alt={t('home.title')} 
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
 
