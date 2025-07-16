@@ -1,0 +1,68 @@
+{
+  "common": {
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "contact": "Contact",
+    "about": "About",
+    "home": "Home",
+    "sharePost": "Share this post",
+    "followUs": "Follow us",
+    "backToPosts": "Back to Posts",
+    "readingTime": "{{time}} min read",
+    "publishedOn": "Published on {{date}}",
+    "getSupport": "Get Support",
+    "quickLinks": "Quick Links",
+    "allRightsReserved": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "accessibility": "Accessibility",
+    "newsletter": "Newsletter",
+    "newsletterDescription": "Stay updated with our latest articles, resources, and community stories.",
+    "emailPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "subscriptionSuccess": "Thank you for subscribing!",
+    "footerDescription": "A safe space dedicated to families navigating mental health challenges together. We share experiences, insights, and support for both those experiencing mental health challenges and their loved ones."
+  },
+  "blog": {
+    "readFullArticle": "Read Full Article",
+    "author": "Author",
+    "categories": "Categories",
+    "relatedPosts": "Related Posts",
+    "shareOn": {
+      "twitter": "Share on Twitter",
+      "facebook": "Share on Facebook",
+      "instagram": "Follow on Instagram"
+    },
+    "postNotFound": {
+      "title": "Post not found",
+      "description": "The post you're looking for doesn't exist or has been removed.",
+      "backToHome": "Back to Home"
+    },
+    "explorePosts": "Explore Posts",
+    "scrollToTop": "Scroll to top",
+    "loading": "Loading post...",
+    "error": "Error loading post"
+  },
+  "home": {
+    "title": "The Listening Home",
+    "subtitle": "Helping families hear what truly matters",
+    "featuredPost": "Featured Post",
+    "latestPosts": "Latest Posts",
+    "noPostsFound": "No posts found",
+    "tryDifferentTopics": "Try selecting different topics or view all posts"
+  },
+  "about": {
+    "title": "About Us",
+    "mission": "Our mission is to create a space for meaningful conversations and deep listening"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  }
+} 

@@ -1,0 +1,49 @@
+{
+  "name": "new-blog",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "upload-posts": "node scripts/uploadPosts.js",
+    "upload-categories": "node scripts/uploadCategories.js",
+    "upload-posts-json": "node scripts/uploadPostsFromJson.js"
+  },
+  "dependencies": {
+    "@firebase/firestore": "^4.8.0",
+    "@headlessui/react": "^1.7.17",
+    "firebase": "^11.10.0",
+    "framer-motion": "^10.15.1",
+    "i18next": "^25.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^15.6.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.30.1",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20.19.8",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "firebase-admin": "^13.4.0",
+    "postcss": "^8.4.27",
+    "sharp": "^0.34.3",
+    "tailwindcss": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vite": "^4.4.5"
+  }
+}

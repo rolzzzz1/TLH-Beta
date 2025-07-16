@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text { fill: #2D2D2B; font-family: Arial, sans-serif; }
+    .house-icon { fill: #F7A69D; }
+    .tagline { fill: #2D2D2B; font-family: Arial, sans-serif; font-size: 24px; }
+  </style>
+  
+  <!-- House with Heart Speech Bubble Icon -->
+  <path class="house-icon" d="M150 100 L200 50 L250 100 L250 180 L150 180 Z"/>
+  <path class="house-icon" d="M180 120 Q200 100 220 120 Q220 140 200 150 Q180 140 180 120 Z"/>
+  
+  <!-- Text -->
+  <text x="270" y="100" class="logo-text" font-size="48" font-weight="bold">THE</text>
+  <text x="270" y="150" class="logo-text" font-size="48" font-weight="bold">LISTENING</text>
+  <text x="270" y="200" class="logo-text" font-size="48" font-weight="bold">HOME</text>
+  
+  <!-- Tagline -->
+  <text x="250" y="250" class="tagline" text-anchor="middle">Helping families hear what truly matters</text>
+</svg> 

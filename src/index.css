@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+@import './styles/markdown.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Noto Sans', sans-serif;
+    --font-devanagari: 'Noto Sans Devanagari', sans-serif;
+  }
+
+  html[lang='hi'] {
+    font-family: var(--font-devanagari);
+  }
+
+  html[lang='en'] {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Hindi text specific styles */
+[lang='hi'] {
+  font-family: var(--font-devanagari);
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+
+/* Markdown content in Hindi */
+[lang='hi'] .markdown-content {
+  font-family: var(--font-devanagari);
+  line-height: 2;
+}
+
+/* Blog titles in Hindi */
+[lang='hi'] h1,
+[lang='hi'] h2,
+[lang='hi'] h3,
+[lang='hi'] h4,
+[lang='hi'] h5,
+[lang='hi'] h6 {
+  font-family: var(--font-devanagari);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* Blog excerpts in Hindi */
+[lang='hi'] .blog-excerpt {
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+} 
