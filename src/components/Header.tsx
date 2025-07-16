@@ -14,7 +14,7 @@ const Header = () => {
             <img 
               src="/logo.png" 
               alt={t('home.title')} 
-              className="h-32 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
